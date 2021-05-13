@@ -1,0 +1,9 @@
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+age = int(age)
+if (age>0):
+  c = 90 - age
+  print(f"You have {c*365} days, {c*52}, and {c*12} months left.")
