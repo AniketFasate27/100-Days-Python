@@ -1,0 +1,8 @@
+print("Welcome to tip calculator")
+bill = float(input("How many ppl: "))
+tip = int(input("what percentage of tip would you lie to give 10, 12 or 15?: "))
+split = int(input("How many peoples: "))
+
+if (bill > 0):
+  pay = (bill+(bill*(tip/100)))/split
+  print(f"${round(pay, 2)}")
