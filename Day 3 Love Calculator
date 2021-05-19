@@ -1,0 +1,39 @@
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+comp = ['t','r','u','e']
+comp2 = ['l','o','v','e']
+name1 = name1.lower()
+name2 = name2.lower()
+print(name1)
+count = 0
+count1 = 0
+count2 = 0
+for i in name1:
+  if i in comp:  
+    count1 = count1 + 1
+
+for i in name1:
+  if i in comp2:  
+    count2 = count2 + 1
+    
+for i in name2:
+  if i in comp:
+    count1 = count1 +1
+
+for i in name2:
+  if i in comp2:  
+    count2 = count2 + 1
+
+count = count1+count2*10
+
+if count < 10 or count > 90:
+  print(f"Your score is {count}, you go together like coke and mentos")
+elif 40 < count < 50 :
+  print(f"Your Score is {count}, you are alright together")
+else:
+  print(f"Your score is {count}")
