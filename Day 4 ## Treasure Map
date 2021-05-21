@@ -1,0 +1,22 @@
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+
+x = [row1,row2,row3]
+d = int(position)
+while d>0:
+  b = d%10
+  a = d//10
+  d = d//10
+if a > 3 or b > 3:
+  print("Error")
+else:
+  x[a][b]="*"
+  print(f"{row1}\n{row2}\n{row3}")
