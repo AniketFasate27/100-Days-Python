@@ -1,0 +1,11 @@
+def chaitya():
+  print("dasf")
+
+chaitya()
+
+
+def kim(name):
+  print(f"United king {name}")
+
+
+kim("Shrya")
