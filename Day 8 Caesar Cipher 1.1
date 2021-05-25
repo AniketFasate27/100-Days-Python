@@ -1,0 +1,27 @@
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+
+ 
+
+def encrypt(direction,enter_text,enter_shift):
+  new_string = ""
+  for i in enter_text:
+    position = alphabet.index(i)
+    if direction == "encode":
+      new_position = position + enter_shift
+      new_variable = alphabet[new_position]
+      #new_string.append(new_variable)
+      new_string += new_variable
+    elif direction=="decode":
+      new_position = position - enter_shift
+      new_variable = alphabet[new_position]
+      #new_string.append(new_variable)    
+      new_string += new_variable
+    
+
+  return print(new_string)
+
+encrypt(direction,text,shift)
