@@ -1,0 +1,24 @@
+def add(a,b):
+  return a + b
+
+def sub(a,b):
+  return a - b
+
+def mult(a,b):
+  return a * b
+
+def divi(a,b):
+  return a // b
+
+dict = {
+  "+" : add,
+  "-" : sub,
+  "/": divi,
+  "*" : mult
+
+}
+num1 = int(input("Num 1 : "))
+num2 = int(input("Num 2 : "))
+operation = input("enter symbol + - * / : ")
+cal = dict[operation]
+print(cal(num1,num2))
