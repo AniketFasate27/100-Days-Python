@@ -1,0 +1,22 @@
+from replit import clear
+#HINT: You can call clear() to clear the output in the console.
+from art import logo
+
+
+wineer = {}
+while True:
+  print(logo)
+  key = input("enyter your name : ")
+  value = int(input("Enter your bid in Rs : "))
+  wineer[key] = value
+  print(wineer)
+  bider = input("there is any bider 'Yes' or No : ")
+  if bider == "Yes":
+    clear()
+    continue
+  elif bider == "No":
+    break
+
+print(f"winner of the bid id :- {max(wineer,key=wineer.get)}")
+
+
